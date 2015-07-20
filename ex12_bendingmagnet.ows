@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme description="Example 12: Bending Magnets" title="ex12_bendingmagnet" version="2.0" working_directory="/Users/srio/Oasys/OasysRun">
+	<nodes>
+		<node id="0" name="Bending Magnet" position="(177.0, 374.0)" project_name="Orange-Shadow" qualified_name="orangecontrib.shadow.widgets.sources.ow_bending_magnet.BendingMagnet" title="Bending Magnet" version="" />
+		<node id="1" name="Histogram" position="(551.0, 366.0)" project_name="Orange-Shadow" qualified_name="orangecontrib.shadow.widgets.plots.ow_histogram.Histogram" title="Histogram" version="" />
+	</nodes>
+	<links>
+		<link enabled="true" id="0" sink_channel="Input Beam" sink_node_id="1" source_channel="Beam" source_node_id="0" />
+	</links>
+	<annotations>
+		<text font-family="Helvetica" font-size="16" id="0" rect="(149.0, 18.0, 480.0, 66.0)">Example 12: Bending Magnet</text>
+		<text font-family="Helvetica" font-size="16" id="1" rect="(26.0, 106.0, 309.0, 189.0)">ESRF bending magnet, full emission in vertical (set limits to 1rad, which is like infinity) at a fixed energy (8 keV), one mrad of horizontal divergence. 
+Play with the polatization (total, parallel, perpendicular) to see the effects in the Z' direction.
+Change also the energy to 18 keV, and see how the resulting beam is more collimated.</text>
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties format="pickle" node_id="0">gAN9cQAoWAcAAABzaWdtYV94cQFHP6Q5WB/Yi71YFQAAAGRpc3RhbmNlX2Zyb21fd2Fpc3RfeHEC
+RwAAAAAAAAAAWA8AAABvcHRpbWl6ZV9zb3VyY2VxA0sAWB8AAABob3Jpem9udGFsX2hhbGZfZGl2
+ZXJnZW5jZV9mcm9tcQRHP0BiTeAjXR1YEwAAAHNhdmVkV2lkZ2V0R2VvbWV0cnlxBWNzaXAKX3Vu
+cGlja2xlX3R5cGUKcQZYDAAAAFB5UXQ0LlF0Q29yZXEHWAoAAABRQnl0ZUFycmF5cQhDLgHZ0MsA
+AQAAAAAAJwAAADoAAATRAAADIAAAACcAAABQAAAE0QAAAyAAAAAAAABxCYVxCodxC1JxDFgEAAAA
+c2VlZHENSmipCABYCwAAAGVtaXR0YW5jZV96cQ5HPjDAGGAZ26NYDgAAAG1hZ25ldGljX2ZpZWxk
+cQ9HP+mZmVQ5yTVYDAAAAHRyYWNlX3NoYWRvd3EQiVgPAAAAbWFnbmV0aWNfcmFkaXVzcRFHQDkt
+XP+1V2VYBgAAAGVuZXJneXESR0AYKPW/4CpNWB8AAABtYXhfdmVydGljYWxfaGFsZl9kaXZlcmdl
+bmNlX3RvcRNHP/AAAAAAAABYGwAAAGdlbmVyYXRlX3BvbGFyaXphdGlvbl9jb21ib3EUSwJYDgAA
+AG51bWJlcl9vZl9yYXlzcRVNiBNYFgAAAGNhbGN1bGF0aW9uX21vZGVfY29tYm9xFkcAAAAAAAAA
+AFgLAAAAZW1pdHRhbmNlX3hxF0c+miwmIEp5+VgVAAAAZGlzdGFuY2VfZnJvbV93YWlzdF96cRhH
+AAAAAAAAAABYEwAAAHN0b3JlX29wdGljYWxfcGF0aHNxGUsBWCEAAABtYXhfdmVydGljYWxfaGFs
+Zl9kaXZlcmdlbmNlX2Zyb21xGkc/8AAAAAAAAFgSAAAAb3B0aW1pemVfZmlsZV9uYW1lcRtYAAAA
+AHEcWB0AAABob3Jpem9udGFsX2hhbGZfZGl2ZXJnZW5jZV90b3EdRz9AYk3gI10dWAkAAAB2aWV3
+X3R5cGVxHksAWAUAAABlX21pbnEfR0C/QAAAAAAAWAUAAABlX21heHEgR0C/QAAAAAAAWBAAAABp
+c19hdXRvbWF0aWNfcnVucSGIWAcAAABzaWdtYV96cSJHP246fZ9RClJYGwAAAG1heF9udW1iZXJf
+b2ZfcmVqZWN0ZWRfcmF5c3EjSoCWmABYGQAAAHNhbXBsZV9kaXN0cmlidXRpb25fY29tYm9xJEsA
+dS4=
+</properties>
+		<properties format="pickle" node_id="1">gAN9cQAoWA4AAAB4X2NvbHVtbl9pbmRleHEBSwVYGAAAAGltYWdlX3BsYW5lX25ld19wb3NpdGlv
+bnECR0AkAAAAAAAAWA4AAABudW1iZXJfb2ZfYmluc3EDS2RYBQAAAHRpdGxlcQRYAwAAACBaJ3EF
+WAsAAABpbWFnZV9wbGFuZXEGSwBYHAAAAGltYWdlX3BsYW5lX3JlbF9hYnNfcG9zaXRpb25xB0sA
+WAsAAABrZWVwX3Jlc3VsdHEISwBYEwAAAHNhdmVkV2lkZ2V0R2VvbWV0cnlxCWNzaXAKX3VucGlj
+a2xlX3R5cGUKcQpYDAAAAFB5UXQ0LlF0Q29yZXELWAoAAABRQnl0ZUFycmF5cQxDLgHZ0MsAAQAA
+AAAAzAAAAC4AAAV2AAADFAAAAMwAAABEAAAFdgAAAxQAAAAAAABxDYVxDodxD1JxEFgQAAAAaXNf
+YXV0b21hdGljX3J1bnERiFgMAAAAdHJhY2Vfc2hhZG93cRKJdS4=
+</properties>
+	</node_properties>
+</scheme>

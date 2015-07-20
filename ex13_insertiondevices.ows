@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme description="Example 13: IDs" title="ex13_insertiondevices" version="2.0" working_directory="/Users/srio/Oasys/OasysRun">
+	<nodes>
+		<node id="0" name="Wiggler" position="(150.0, 165.0)" project_name="Orange-Shadow" qualified_name="orangecontrib.shadow.widgets.sources.ow_wiggler.Wiggler" title="Wiggler" version="" />
+		<node id="1" name="Plot XY" position="(444.0, 169.0)" project_name="Orange-Shadow" qualified_name="orangecontrib.shadow.widgets.plots.ow_plot_xy.PlotXY" title="Plot XY" version="" />
+		<node id="2" name="Undulator Gaussian" position="(156.0, 309.0)" project_name="Orange-Shadow" qualified_name="orangecontrib.shadow.widgets.sources.ow_undulator_gaussian.UndulatorGaussian" title="Undulator Gaussian" version="" />
+		<node id="3" name="Plot XY" position="(430.0, 310.0)" project_name="Orange-Shadow" qualified_name="orangecontrib.shadow.widgets.plots.ow_plot_xy.PlotXY" title="Plot XY (1)" version="" />
+	</nodes>
+	<links>
+		<link enabled="true" id="0" sink_channel="Input Beam" sink_node_id="1" source_channel="Beam" source_node_id="0" />
+		<link enabled="true" id="1" sink_channel="Input Beam" sink_node_id="3" source_channel="Beam" source_node_id="2" />
+	</links>
+	<annotations>
+		<text font-family="Helvetica" font-size="16" id="0" rect="(58.0, 14.0, 521.0, 29.0)">Example 13: Insertion devices. Example of a wiggler and an Undulator
+
+Note that the full undulator model is not yet available. Here the Undulator as Gaussian approximation is presented.  </text>
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties format="pickle" node_id="0">gAN9cQAoWBsAAABtYXhfbnVtYmVyX29mX3JlamVjdGVkX3JheXNxAUsAWAwAAAB0cmFjZV9zaGFk
+b3dxAolYFAAAAHVzZV9lbWl0dGFuY2VzX2NvbWJvcQNLAVgHAAAAc2lnbWFfenEERz9Q4CIUJv5y
+WAkAAAB2aWV3X3R5cGVxBUsBWBUAAABkaXN0YW5jZV9mcm9tX3dhaXN0X3pxBkcAAAAAAAAAAFgF
+AAAAbWF4X3pxB0c/8AAAAAAAAFgKAAAAdHlwZV9jb21ib3EISwBYCwAAAGVtaXR0YW5jZV96cQlH
+PjDAGGGKyvhYBQAAAG1pbl94cQpHv/AAAAAAAABYEQAAAG51bWJlcl9vZl9wZXJpb2RzcQtLClgF
+AAAAZV9taW5xDEdAw4WAAAAAAFgHAAAAa192YWx1ZXENR0AzmZmZmZmaWA0AAABzbGl0X2Rpc3Rh
+bmNlcQ5HQI9AAAAAAABYEAAAAGlzX2F1dG9tYXRpY19ydW5xD4hYDgAAAG51bWJlcl9vZl9yYXlz
+cRBNiBNYFQAAAG9wdGltaXplX3NvdXJjZV9jb21ib3ERSwBYBgAAAGVuZXJneXESR0AYKPXCj1wp
+WAUAAABtYXhfeHETRz/wAAAAAAAAWBMAAABzYXZlZFdpZGdldEdlb21ldHJ5cRRjc2lwCl91bnBp
+Y2tsZV90eXBlCnEVWAwAAABQeVF0NC5RdENvcmVxFlgKAAAAUUJ5dGVBcnJheXEXQy4B2dDLAAEA
+AAAAAOUAAAAkAAAFjwAAAyIAAADlAAAAOgAABY8AAAMiAAAAAAAAcRiFcRmHcRpScRtYBQAAAGVf
+bWF4cRxHQMOKgAAAAABYBwAAAHNpZ21hX3hxHUc/d1jiIERjylgLAAAAZW1pdHRhbmNlX3hxHkc+
+miwmI6sq51gJAAAAaWRfcGVyaW9kcR9HP8mZmZmZmZpYHAAAAGZpbGVfd2l0aF9waGFzZV9zcGFj
+ZV92b2x1bWVxIFgOAAAATk9ORSBTUEVDSUZJRURxIVgFAAAAbWluX3pxIke/8AAAAAAAAFgQAAAA
+ZmlsZV93aXRoX2JfdnNfeXEjWAUAAAAzUFcuYnEkWAQAAABzZWVkcSVKEZ5WAFgVAAAAZGlzdGFu
+Y2VfZnJvbV93YWlzdF94cSZHAAAAAAAAAABYEwAAAGZpbGVfd2l0aF9oYXJtb25pY3NxJ1gFAAAA
+M1BXLmhxKHUu
+</properties>
+		<properties format="pickle" node_id="1">gAN9cQAoWAsAAABpbWFnZV9wbGFuZXEBSwBYBwAAAHlfcmFuZ2VxAkcAAAAAAAAAAFgHAAAAeF9y
+YW5nZXEDSwBYDgAAAHlfY29sdW1uX2luZGV4cQRLAFgEAAAAcmF5c3EFSwBYDgAAAHhfY29sdW1u
+X2luZGV4cQZLAVgOAAAAbnVtYmVyX29mX2JpbnNxB0tkWBMAAABzYXZlZFdpZGdldEdlb21ldHJ5
+cQhjc2lwCl91bnBpY2tsZV90eXBlCnEJWAwAAABQeVF0NC5RdENvcmVxClgKAAAAUUJ5dGVBcnJh
+eXELQy4B2dDLAAEAAAAAAJ0AAAA6AAAFRwAAAwcAAACdAAAAUAAABUcAAAMHAAAAAAAAcQyFcQ2H
+cQ5ScQ9YCwAAAHlfcmFuZ2VfbWF4cRBHAAAAAAAAAABYDAAAAHRyYWNlX3NoYWRvd3ERiVgLAAAA
+eF9yYW5nZV9tYXhxEksAWAsAAAB5X3JhbmdlX21pbnETRwAAAAAAAAAAWA4AAABjYXJ0ZXNpYW5f
+YXhpc3EUSwBYCwAAAHhfcmFuZ2VfbWlucRVHAAAAAAAAAABYHAAAAGltYWdlX3BsYW5lX3JlbF9h
+YnNfcG9zaXRpb25xFksAWAsAAABrZWVwX3Jlc3VsdHEXSwBYEAAAAGlzX2F1dG9tYXRpY19ydW5x
+GIhYBQAAAHRpdGxlcRlYBQAAACBZLCBYcRpYGAAAAGltYWdlX3BsYW5lX25ld19wb3NpdGlvbnEb
+R0AkAAAAAAAAdS4=
+</properties>
+		<properties format="pickle" node_id="2">gAN9cQAoWA4AAABudW1iZXJfb2ZfcmF5c3EBTYgTWBMAAABzYXZlZFdpZGdldEdlb21ldHJ5cQJj
+c2lwCl91bnBpY2tsZV90eXBlCnEDWAwAAABQeVF0NC5RdENvcmVxBFgKAAAAUUJ5dGVBcnJheXEF
+Qy4B2dDLAAEAAAAAAA4AAAAXAAAFkAAAAzUAAAAOAAAALQAABZAAAAM1AAAAAAAAcQaFcQeHcQhS
+cQlYEAAAAGlzX2F1dG9tYXRpY19ydW5xCohYDAAAAHRyYWNlX3NoYWRvd3ELiVgHAAAAc2lnbWFf
+enEMRz9Q4CIUJv5yWAcAAABzaWdtYV94cQ1HP3dY4hllK9RYEAAAAHVuZHVsYXRvcl9sZW5ndGhx
+Dkc/+mZmZmZmZlgJAAAAdmlld190eXBlcQ9LAFgGAAAAZW5lcmd5cRBHQL6ZgAAAAABYEgAAAHNp
+Z21hX2RpdmVyZ2VuY2VfenERRz7PtXz5+68NWAQAAABzZWVkcRJKh2JnAFgSAAAAc2lnbWFfZGl2
+ZXJnZW5jZV94cRNHPxHuPw1cCRVYBwAAAGRlbHRhX2VxFEc/8AAAAAAAAHUu
+</properties>
+		<properties format="pickle" node_id="3">gAN9cQAoWAsAAABpbWFnZV9wbGFuZXEBSwBYBwAAAHlfcmFuZ2VxAkcAAAAAAAAAAFgHAAAAeF9y
+YW5nZXEDSwBYDgAAAHlfY29sdW1uX2luZGV4cQRLBVgEAAAAcmF5c3EFSwBYDgAAAHhfY29sdW1u
+X2luZGV4cQZLA1gOAAAAbnVtYmVyX29mX2JpbnNxB0tkWBMAAABzYXZlZFdpZGdldEdlb21ldHJ5
+cQhjc2lwCl91bnBpY2tsZV90eXBlCnEJWAwAAABQeVF0NC5RdENvcmVxClgKAAAAUUJ5dGVBcnJh
+eXELQy4B2dDLAAEAAAAAAJ0AAAA6AAAFRwAAAwcAAACdAAAAUAAABUcAAAMHAAAAAAAAcQyFcQ2H
+cQ5ScQ9YCwAAAHlfcmFuZ2VfbWF4cRBHAAAAAAAAAABYDAAAAHRyYWNlX3NoYWRvd3ERiVgLAAAA
+eF9yYW5nZV9tYXhxEksAWAsAAAB5X3JhbmdlX21pbnETRwAAAAAAAAAAWA4AAABjYXJ0ZXNpYW5f
+YXhpc3EUSwBYCwAAAHhfcmFuZ2VfbWlucRVHAAAAAAAAAABYHAAAAGltYWdlX3BsYW5lX3JlbF9h
+YnNfcG9zaXRpb25xFksAWAsAAABrZWVwX3Jlc3VsdHEXSwBYEAAAAGlzX2F1dG9tYXRpY19ydW5x
+GIhYBQAAAHRpdGxlcRlYBwAAACBYJywgWidxGlgYAAAAaW1hZ2VfcGxhbmVfbmV3X3Bvc2l0aW9u
+cRtHQCQAAAAAAAB1Lg==
+</properties>
+	</node_properties>
+</scheme>
