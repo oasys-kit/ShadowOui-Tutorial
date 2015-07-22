@@ -83,4 +83,5 @@ with the individual definitions shown.
 widget). Surceinfo on accepted/rejected rays is wrong.
 -Example 25 (fresnel). Script not yet working)
 
+-Update the tutorial.pdf document for ShadowOui
 
