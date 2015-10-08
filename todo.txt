@@ -1,47 +1,16 @@
 
 TODO:
 
-Orange
-=======
--Implement for Orange widgets "right-click"-run [Janez]
-
--Implement for Orange widgets "right-click"-duplicate [Janez]
-
 ShadowOui
 =========
 
--histo1  widget: do plots with histogram looking:
-   (hint: display tkt["histogram_path"] vs tkt["bin_path"]
-          with tkt = beam.histo1() )  [Luca]
-
--histo1:  add column with weight ("ref" keyword in histo1, now is
-          always 23 so weigting with intensity. This should be the
-          default) [Luca]
-
 -Info widget:  Not working with combined optical elements [Manolo+Luca]
                Not displaying sysinfo [Manolo]
-               Not displaying distance summary (result of 
-               CompoundOE.info() )  [Luca]
-               What is "system output"? The graphical representation?
 
 -DobleCrystalMonochromator widget:
                When dimensions are infinite, it shows an error saying
                that dimensions are set to zero.
-               The example shows a results compatible with the (+,+)
-               configuration and not with the (+,-) configuration. Check 
-               that O.E.  Orientation angle is 180 for the second crystal 
-               always. [Manolo+Luca]
 
--Write BeamFileWriter widget (similarly to BeamFileReader). Right now it
-               is implemented as script in examples  25 and 26 [Luca]
-
-
--Write a refractor O.E. widget. To discuss how to introduce the shape,
-as it is not a good idea to create multiple refractors for the different
-shapes, as done with mirror, crystals and gratings. 
-
--Transfocator widget: Displays an error message if attenuator
-coefficient os zero. It can be zero (no absorption) [Luca]
 
 -Image widget: Does not collapse to a line when keeping same aspect
 ration when one direction width is much much smaller than the other
@@ -50,6 +19,8 @@ ration when one direction width is much much smaller than the other
 
 Shadow API
 ==========
+-shadow API: mirinfo should also work for compoundOE
+
 -In Shadow.CompoundOE.append_transfocator() add an option to create the
 file mytransfocator.dat to compare easily with the shadow3 command mode.
 [Manolo]
