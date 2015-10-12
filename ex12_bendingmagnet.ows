@@ -1,46 +1,69 @@
 <?xml version='1.0' encoding='utf-8'?>
-<scheme description="Example 12: Bending Magnets" title="ex12_bendingmagnet" version="2.0" working_directory="/Users/srio/Oasys/OasysRun">
+<scheme description="Example 12: Bending Magnets" title="ex12_bendingmagnet" version="2.0" working_directory="/users/srio/Oasys/OasysRun">
 	<nodes>
-		<node id="0" name="Bending Magnet" position="(177.0, 374.0)" project_name="Orange-Shadow" qualified_name="orangecontrib.shadow.widgets.sources.ow_bending_magnet.BendingMagnet" title="Bending Magnet" version="" />
-		<node id="1" name="Histogram" position="(551.0, 366.0)" project_name="Orange-Shadow" qualified_name="orangecontrib.shadow.widgets.plots.ow_histogram.Histogram" title="Histogram" version="" />
+		<node id="0" name="Bending Magnet" position="(178.0, 374.0)" project_name="ShadowOui" qualified_name="orangecontrib.shadow.widgets.sources.ow_bending_magnet.BendingMagnet" title="Bending Magnet" version="" />
+		<node id="1" name="Histogram" position="(565.0, 325.0)" project_name="ShadowOui" qualified_name="orangecontrib.shadow.widgets.plots.ow_histogram.Histogram" title="Histogram (intensity)" version="" />
+		<node id="2" name="Histogram" position="(509.0, 444.0)" project_name="ShadowOui" qualified_name="orangecontrib.shadow.widgets.plots.ow_histogram.Histogram" title="Histogram (intensity-sigma)" version="" />
+		<node id="3" name="Histogram" position="(507.0, 560.0)" project_name="ShadowOui" qualified_name="orangecontrib.shadow.widgets.plots.ow_histogram.Histogram" title="Histogram (intensity-pi)" version="" />
 	</nodes>
 	<links>
 		<link enabled="true" id="0" sink_channel="Input Beam" sink_node_id="1" source_channel="Beam" source_node_id="0" />
+		<link enabled="true" id="1" sink_channel="Input Beam" sink_node_id="2" source_channel="Beam" source_node_id="0" />
+		<link enabled="true" id="2" sink_channel="Input Beam" sink_node_id="3" source_channel="Beam" source_node_id="0" />
 	</links>
 	<annotations>
 		<text font-family="Helvetica" font-size="16" id="0" rect="(149.0, 18.0, 480.0, 66.0)">Example 12: Bending Magnet</text>
-		<text font-family="Helvetica" font-size="16" id="1" rect="(26.0, 106.0, 309.0, 189.0)">ESRF bending magnet, full emission in vertical (set limits to 1rad, which is like infinity) at a fixed energy (8 keV), one mrad of horizontal divergence. 
-Play with the polatization (total, parallel, perpendicular) to see the effects in the Z' direction.
+		<text font-family="Helvetica" font-size="16" id="1" rect="(33.0, 68.0, 309.0, 276.0)">ESRF bending magnet, full emission in vertical (set limits to 1rad, which is like infinity) at a fixed energy (8 keV), one mrad of horizontal divergence. 
+See the intensity distribution versus  the Z' direction for the different polatizations (total, parallel, perpendicular).
 Change also the energy to 18 keV, and see how the resulting beam is more collimated.</text>
 	</annotations>
 	<thumbnail />
 	<node_properties>
-		<properties format="pickle" node_id="0">gAN9cQAoWAcAAABzaWdtYV94cQFHP6Q5WB/Yi71YFQAAAGRpc3RhbmNlX2Zyb21fd2Fpc3RfeHEC
-RwAAAAAAAAAAWA8AAABvcHRpbWl6ZV9zb3VyY2VxA0sAWB8AAABob3Jpem9udGFsX2hhbGZfZGl2
-ZXJnZW5jZV9mcm9tcQRHP0BiTeAjXR1YEwAAAHNhdmVkV2lkZ2V0R2VvbWV0cnlxBWNzaXAKX3Vu
-cGlja2xlX3R5cGUKcQZYDAAAAFB5UXQ0LlF0Q29yZXEHWAoAAABRQnl0ZUFycmF5cQhDLgHZ0MsA
-AQAAAAAAJwAAADoAAATRAAADIAAAACcAAABQAAAE0QAAAyAAAAAAAABxCYVxCodxC1JxDFgEAAAA
-c2VlZHENSmipCABYCwAAAGVtaXR0YW5jZV96cQ5HPjDAGGAZ26NYDgAAAG1hZ25ldGljX2ZpZWxk
-cQ9HP+mZmVQ5yTVYDAAAAHRyYWNlX3NoYWRvd3EQiVgPAAAAbWFnbmV0aWNfcmFkaXVzcRFHQDkt
-XP+1V2VYBgAAAGVuZXJneXESR0AYKPW/4CpNWB8AAABtYXhfdmVydGljYWxfaGFsZl9kaXZlcmdl
-bmNlX3RvcRNHP/AAAAAAAABYGwAAAGdlbmVyYXRlX3BvbGFyaXphdGlvbl9jb21ib3EUSwJYDgAA
-AG51bWJlcl9vZl9yYXlzcRVNiBNYFgAAAGNhbGN1bGF0aW9uX21vZGVfY29tYm9xFkcAAAAAAAAA
-AFgLAAAAZW1pdHRhbmNlX3hxF0c+miwmIEp5+VgVAAAAZGlzdGFuY2VfZnJvbV93YWlzdF96cRhH
-AAAAAAAAAABYEwAAAHN0b3JlX29wdGljYWxfcGF0aHNxGUsBWCEAAABtYXhfdmVydGljYWxfaGFs
-Zl9kaXZlcmdlbmNlX2Zyb21xGkc/8AAAAAAAAFgSAAAAb3B0aW1pemVfZmlsZV9uYW1lcRtYAAAA
-AHEcWB0AAABob3Jpem9udGFsX2hhbGZfZGl2ZXJnZW5jZV90b3EdRz9AYk3gI10dWAkAAAB2aWV3
-X3R5cGVxHksAWAUAAABlX21pbnEfR0C/QAAAAAAAWAUAAABlX21heHEgR0C/QAAAAAAAWBAAAABp
-c19hdXRvbWF0aWNfcnVucSGIWAcAAABzaWdtYV96cSJHP246fZ9RClJYGwAAAG1heF9udW1iZXJf
-b2ZfcmVqZWN0ZWRfcmF5c3EjSoCWmABYGQAAAHNhbXBsZV9kaXN0cmlidXRpb25fY29tYm9xJEsA
+		<properties format="pickle" node_id="0">gAN9cQAoWB8AAABob3Jpem9udGFsX2hhbGZfZGl2ZXJnZW5jZV9mcm9tcQFHP0BiTeAjXR1YDgAA
+AG51bWJlcl9vZl9yYXlzcQJNiBNYEwAAAHNhdmVkV2lkZ2V0R2VvbWV0cnlxA2NzaXAKX3VucGlj
+a2xlX3R5cGUKcQRYDAAAAFB5UXQ0LlF0Q29yZXEFWAoAAABRQnl0ZUFycmF5cQZDLgHZ0MsAAQAA
+AAAAvgAAAIQAAAV8AAADhAAAAMgAAACqAAAFcgAAA3oAAAAAAABxB4VxCIdxCVJxClgSAAAAb3B0
+aW1pemVfZmlsZV9uYW1lcQtYAAAAAHEMWB8AAABtYXhfdmVydGljYWxfaGFsZl9kaXZlcmdlbmNl
+X3RvcQ1HP/AAAAAAAABYFQAAAGRpc3RhbmNlX2Zyb21fd2Fpc3RfeHEORwAAAAAAAAAAWA4AAABt
+YWduZXRpY19maWVsZHEPRz/pmZlUOck1WBUAAABkaXN0YW5jZV9mcm9tX3dhaXN0X3pxEEcAAAAA
+AAAAAFgPAAAAb3B0aW1pemVfc291cmNlcRFLAFgHAAAAc2lnbWFfeHESRz+kOVgf2Iu9WBsAAABt
+YXhfbnVtYmVyX29mX3JlamVjdGVkX3JheXNxE0qAlpgAWA8AAABtYWduZXRpY19yYWRpdXNxFEdA
+OS1c/7VXZVgGAAAAZW5lcmd5cRVHQBgo9b/gKk1YCwAAAGVtaXR0YW5jZV94cRZHPposJiBKeflY
+EwAAAHN0b3JlX29wdGljYWxfcGF0aHNxF0sBWCEAAABtYXhfdmVydGljYWxfaGFsZl9kaXZlcmdl
+bmNlX2Zyb21xGEc/8AAAAAAAAFgJAAAAdmlld190eXBlcRlLAFgFAAAAZV9tYXhxGkdAv0AAAAAA
+AFgZAAAAc2FtcGxlX2Rpc3RyaWJ1dGlvbl9jb21ib3EbSwBYFgAAAGNhbGN1bGF0aW9uX21vZGVf
+Y29tYm9xHEcAAAAAAAAAAFgFAAAAZV9taW5xHUdAv0AAAAAAAFgdAAAAaG9yaXpvbnRhbF9oYWxm
+X2RpdmVyZ2VuY2VfdG9xHkc/QGJN4CNdHVgMAAAAdHJhY2Vfc2hhZG93cR+JWBsAAABnZW5lcmF0
+ZV9wb2xhcml6YXRpb25fY29tYm9xIEsCWAQAAABzZWVkcSFKaKkIAFgQAAAAaXNfYXV0b21hdGlj
+X3J1bnEiiFgHAAAAc2lnbWFfenEjRz9uOn2fUQpSWAsAAABlbWl0dGFuY2VfenEkRz4wwBhgGduj
 dS4=
 </properties>
-		<properties format="pickle" node_id="1">gAN9cQAoWA4AAAB4X2NvbHVtbl9pbmRleHEBSwVYGAAAAGltYWdlX3BsYW5lX25ld19wb3NpdGlv
-bnECR0AkAAAAAAAAWA4AAABudW1iZXJfb2ZfYmluc3EDS2RYBQAAAHRpdGxlcQRYAwAAACBaJ3EF
-WAsAAABpbWFnZV9wbGFuZXEGSwBYHAAAAGltYWdlX3BsYW5lX3JlbF9hYnNfcG9zaXRpb25xB0sA
-WAsAAABrZWVwX3Jlc3VsdHEISwBYEwAAAHNhdmVkV2lkZ2V0R2VvbWV0cnlxCWNzaXAKX3VucGlj
-a2xlX3R5cGUKcQpYDAAAAFB5UXQ0LlF0Q29yZXELWAoAAABRQnl0ZUFycmF5cQxDLgHZ0MsAAQAA
-AAAAzAAAAC4AAAV2AAADFAAAAMwAAABEAAAFdgAAAxQAAAAAAABxDYVxDodxD1JxEFgQAAAAaXNf
-YXV0b21hdGljX3J1bnERiFgMAAAAdHJhY2Vfc2hhZG93cRKJdS4=
+		<properties format="pickle" node_id="1">gAN9cQAoWBMAAABzYXZlZFdpZGdldEdlb21ldHJ5cQFjc2lwCl91bnBpY2tsZV90eXBlCnECWAwA
+AABQeVF0NC5RdENvcmVxA1gKAAAAUUJ5dGVBcnJheXEEQy4B2dDLAAEAAAAAAJoAAAAOAAAFWAAA
+Aw4AAACkAAAANAAABU4AAAMEAAAAAAAAcQWFcQaHcQdScQhYGAAAAGltYWdlX3BsYW5lX25ld19w
+b3NpdGlvbnEJR0AkAAAAAAAAWBMAAAB3ZWlnaHRfY29sdW1uX2luZGV4cQpLFlgOAAAAbnVtYmVy
+X29mX2JpbnNxC0tkWAsAAABrZWVwX3Jlc3VsdHEMSwBYBQAAAHRpdGxlcQ1YAwAAACBaJ3EOWAwA
+AAB0cmFjZV9zaGFkb3dxD4lYCwAAAGltYWdlX3BsYW5lcRBLAFgQAAAAaXNfYXV0b21hdGljX3J1
+bnERiFgOAAAAeF9jb2x1bW5faW5kZXhxEksFWBwAAABpbWFnZV9wbGFuZV9yZWxfYWJzX3Bvc2l0
+aW9ucRNLAHUu
+</properties>
+		<properties format="pickle" node_id="2">gAN9cQAoWBMAAABzYXZlZFdpZGdldEdlb21ldHJ5cQFjc2lwCl91bnBpY2tsZV90eXBlCnECWAwA
+AABQeVF0NC5RdENvcmVxA1gKAAAAUUJ5dGVBcnJheXEEQy4B2dDLAAEAAAAAAJoAAAAOAAAFWAAA
+Aw4AAACkAAAANAAABU4AAAMEAAAAAAAAcQWFcQaHcQdScQhYGAAAAGltYWdlX3BsYW5lX25ld19w
+b3NpdGlvbnEJR0AkAAAAAAAAWBMAAAB3ZWlnaHRfY29sdW1uX2luZGV4cQpLF1gOAAAAbnVtYmVy
+X29mX2JpbnNxC0tkWAsAAABrZWVwX3Jlc3VsdHEMSwBYBQAAAHRpdGxlcQ1YAwAAACBaJ3EOWAwA
+AAB0cmFjZV9zaGFkb3dxD4lYCwAAAGltYWdlX3BsYW5lcRBLAFgQAAAAaXNfYXV0b21hdGljX3J1
+bnERiFgOAAAAeF9jb2x1bW5faW5kZXhxEksFWBwAAABpbWFnZV9wbGFuZV9yZWxfYWJzX3Bvc2l0
+aW9ucRNLAHUu
+</properties>
+		<properties format="pickle" node_id="3">gAN9cQAoWBMAAABzYXZlZFdpZGdldEdlb21ldHJ5cQFjc2lwCl91bnBpY2tsZV90eXBlCnECWAwA
+AABQeVF0NC5RdENvcmVxA1gKAAAAUUJ5dGVBcnJheXEEQy4B2dDLAAEAAAAAAJAAAAAOAAAFTgAA
+Aw4AAACaAAAANAAABUQAAAMEAAAAAAAAcQWFcQaHcQdScQhYGAAAAGltYWdlX3BsYW5lX25ld19w
+b3NpdGlvbnEJR0AkAAAAAAAAWBMAAAB3ZWlnaHRfY29sdW1uX2luZGV4cQpLGFgOAAAAbnVtYmVy
+X29mX2JpbnNxC0tkWAsAAABrZWVwX3Jlc3VsdHEMSwBYBQAAAHRpdGxlcQ1YAwAAACBaJ3EOWAwA
+AAB0cmFjZV9zaGFkb3dxD4lYCwAAAGltYWdlX3BsYW5lcRBLAFgQAAAAaXNfYXV0b21hdGljX3J1
+bnERiFgOAAAAeF9jb2x1bW5faW5kZXhxEksFWBwAAABpbWFnZV9wbGFuZV9yZWxfYWJzX3Bvc2l0
+aW9ucRNLAHUu
 </properties>
 	</node_properties>
 </scheme>
