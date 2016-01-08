@@ -1,14 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
-<scheme description="Example 13: IDs" title="ex13_insertiondevices" version="2.0" working_directory="/Users/srio/Oasys/OasysRun">
+<scheme description="Example 13: IDs" title="ex13_insertiondevices" version="2.0" working_directory="/users/srio/Oasys/OasysRun">
 	<nodes>
-		<node id="0" name="Wiggler" position="(150.0, 165.0)" project_name="Orange-Shadow" qualified_name="orangecontrib.shadow.widgets.sources.ow_wiggler.Wiggler" title="Wiggler" version="" />
-		<node id="1" name="Plot XY" position="(444.0, 169.0)" project_name="Orange-Shadow" qualified_name="orangecontrib.shadow.widgets.plots.ow_plot_xy.PlotXY" title="Plot XY" version="" />
-		<node id="2" name="Undulator Gaussian" position="(156.0, 309.0)" project_name="Orange-Shadow" qualified_name="orangecontrib.shadow.widgets.sources.ow_undulator_gaussian.UndulatorGaussian" title="Undulator Gaussian" version="" />
-		<node id="3" name="Plot XY" position="(430.0, 310.0)" project_name="Orange-Shadow" qualified_name="orangecontrib.shadow.widgets.plots.ow_plot_xy.PlotXY" title="Plot XY (1)" version="" />
+		<node id="0" name="Wiggler" position="(150.0, 165.0)" project_name="ShadowOui" qualified_name="orangecontrib.shadow.widgets.sources.ow_wiggler.Wiggler" title="Wiggler" version="" />
+		<node id="1" name="Plot XY" position="(444.0, 169.0)" project_name="ShadowOui" qualified_name="orangecontrib.shadow.widgets.plots.ow_plot_xy.PlotXY" title="Plot XY" version="" />
+		<node id="2" name="Undulator Gaussian" position="(157.0, 310.0)" project_name="ShadowOui" qualified_name="orangecontrib.shadow.widgets.sources.ow_undulator_gaussian.UndulatorGaussian" title="Undulator Gaussian" version="" />
+		<node id="3" name="Plot XY" position="(430.0, 310.0)" project_name="ShadowOui" qualified_name="orangecontrib.shadow.widgets.plots.ow_plot_xy.PlotXY" title="Plot XY (1)" version="" />
+		<node id="4" name="Info" position="(430.0, 459.0)" project_name="ShadowOui" qualified_name="orangecontrib.shadow.widgets.plots.ow_info.Info" title="Info" version="" />
 	</nodes>
 	<links>
 		<link enabled="true" id="0" sink_channel="Input Beam" sink_node_id="1" source_channel="Beam" source_node_id="0" />
 		<link enabled="true" id="1" sink_channel="Input Beam" sink_node_id="3" source_channel="Beam" source_node_id="2" />
+		<link enabled="true" id="2" sink_channel="Input Beam" sink_node_id="4" source_channel="Beam" source_node_id="2" />
 	</links>
 	<annotations>
 		<text font-family="Helvetica" font-size="16" id="0" rect="(58.0, 14.0, 521.0, 29.0)">Example 13: Insertion devices. Example of a wiggler and an Undulator
@@ -17,56 +19,60 @@ Note that the full undulator model is not yet available. Here the Undulator as G
 	</annotations>
 	<thumbnail />
 	<node_properties>
-		<properties format="pickle" node_id="0">gAN9cQAoWBsAAABtYXhfbnVtYmVyX29mX3JlamVjdGVkX3JheXNxAUsAWAwAAAB0cmFjZV9zaGFk
-b3dxAolYFAAAAHVzZV9lbWl0dGFuY2VzX2NvbWJvcQNLAVgHAAAAc2lnbWFfenEERz9Q4CIUJv5y
-WAkAAAB2aWV3X3R5cGVxBUsBWBUAAABkaXN0YW5jZV9mcm9tX3dhaXN0X3pxBkcAAAAAAAAAAFgF
-AAAAbWF4X3pxB0c/8AAAAAAAAFgKAAAAdHlwZV9jb21ib3EISwBYCwAAAGVtaXR0YW5jZV96cQlH
-PjDAGGGKyvhYBQAAAG1pbl94cQpHv/AAAAAAAABYEQAAAG51bWJlcl9vZl9wZXJpb2RzcQtLClgF
-AAAAZV9taW5xDEdAw4WAAAAAAFgHAAAAa192YWx1ZXENR0AzmZmZmZmaWA0AAABzbGl0X2Rpc3Rh
-bmNlcQ5HQI9AAAAAAABYEAAAAGlzX2F1dG9tYXRpY19ydW5xD4hYDgAAAG51bWJlcl9vZl9yYXlz
-cRBNiBNYFQAAAG9wdGltaXplX3NvdXJjZV9jb21ib3ERSwBYBgAAAGVuZXJneXESR0AYKPXCj1wp
-WAUAAABtYXhfeHETRz/wAAAAAAAAWBMAAABzYXZlZFdpZGdldEdlb21ldHJ5cRRjc2lwCl91bnBp
-Y2tsZV90eXBlCnEVWAwAAABQeVF0NC5RdENvcmVxFlgKAAAAUUJ5dGVBcnJheXEXQy4B2dDLAAEA
-AAAAAOUAAAAkAAAFjwAAAyIAAADlAAAAOgAABY8AAAMiAAAAAAAAcRiFcRmHcRpScRtYBQAAAGVf
-bWF4cRxHQMOKgAAAAABYBwAAAHNpZ21hX3hxHUc/d1jiIERjylgLAAAAZW1pdHRhbmNlX3hxHkc+
-miwmI6sq51gJAAAAaWRfcGVyaW9kcR9HP8mZmZmZmZpYHAAAAGZpbGVfd2l0aF9waGFzZV9zcGFj
-ZV92b2x1bWVxIFgOAAAATk9ORSBTUEVDSUZJRURxIVgFAAAAbWluX3pxIke/8AAAAAAAAFgQAAAA
-ZmlsZV93aXRoX2JfdnNfeXEjWAUAAAAzUFcuYnEkWAQAAABzZWVkcSVKEZ5WAFgVAAAAZGlzdGFu
-Y2VfZnJvbV93YWlzdF94cSZHAAAAAAAAAABYEwAAAGZpbGVfd2l0aF9oYXJtb25pY3NxJ1gFAAAA
-M1BXLmhxKHUu
+		<properties format="pickle" node_id="0">gAN9cQAoWBwAAABmaWxlX3dpdGhfcGhhc2Vfc3BhY2Vfdm9sdW1lcQFYDgAAAE5PTkUgU1BFQ0lG
+SUVEcQJYFQAAAGRpc3RhbmNlX2Zyb21fd2Fpc3RfeHEDRwAAAAAAAAAAWAQAAABzZWVkcQRKEZ5W
+AFgFAAAAbWF4X3pxBUc/8AAAAAAAAFgFAAAAZV9taW5xBkdAw4WAAAAAAFgVAAAAb3B0aW1pemVf
+c291cmNlX2NvbWJvcQdLAFgQAAAAZmlsZV93aXRoX2JfdnNfeXEIWAUAAAAzUFcuYnEJWAwAAAB0
+cmFjZV9zaGFkb3dxColYBgAAAGVuZXJneXELR0AYKPXCj1wpWA4AAABudW1iZXJfb2ZfcmF5c3EM
+TYgTWAcAAABrX3ZhbHVlcQ1HQDOZmZmZmZpYFQAAAGRpc3RhbmNlX2Zyb21fd2Fpc3RfenEORwAA
+AAAAAAAAWAcAAABzaWdtYV96cQ9HP1DgIhQm/nJYCQAAAGlkX3BlcmlvZHEQRz/JmZmZmZmaWBMA
+AABmaWxlX3dpdGhfaGFybW9uaWNzcRFYBQAAADNQVy5ocRJYEAAAAGlzX2F1dG9tYXRpY19ydW5x
+E4hYCwAAAGVtaXR0YW5jZV96cRRHPjDAGGGKyvhYBQAAAG1pbl96cRVHv/AAAAAAAABYEQAAAG51
+bWJlcl9vZl9wZXJpb2RzcRZLClgFAAAAbWF4X3hxF0c/8AAAAAAAAFgNAAAAc2xpdF9kaXN0YW5j
+ZXEYR0CPQAAAAAAAWBsAAABtYXhfbnVtYmVyX29mX3JlamVjdGVkX3JheXNxGUsAWBMAAABzYXZl
+ZFdpZGdldEdlb21ldHJ5cRpjc2lwCl91bnBpY2tsZV90eXBlCnEbWAwAAABQeVF0NC5RdENvcmVx
+HFgKAAAAUUJ5dGVBcnJheXEdQy4B2dDLAAEAAAAAADcAAAAmAAAGhQAAA/cAAABBAAAATAAABnsA
+AAPtAAAAAAAAcR6FcR+HcSBScSFYBQAAAG1pbl94cSJHv/AAAAAAAABYFAAAAHVzZV9lbWl0dGFu
+Y2VzX2NvbWJvcSNLAFgFAAAAZV9tYXhxJEdAw4qAAAAAAFgKAAAAdHlwZV9jb21ib3ElSwBYCwAA
+AGVtaXR0YW5jZV94cSZHPposJiOrKudYCQAAAHZpZXdfdHlwZXEnSwBYBwAAAHNpZ21hX3hxKEc/
+d1jiIERjynUu
 </properties>
-		<properties format="pickle" node_id="1">gAN9cQAoWAsAAABpbWFnZV9wbGFuZXEBSwBYBwAAAHlfcmFuZ2VxAkcAAAAAAAAAAFgHAAAAeF9y
-YW5nZXEDSwBYDgAAAHlfY29sdW1uX2luZGV4cQRLAFgEAAAAcmF5c3EFSwBYDgAAAHhfY29sdW1u
-X2luZGV4cQZLAVgOAAAAbnVtYmVyX29mX2JpbnNxB0tkWBMAAABzYXZlZFdpZGdldEdlb21ldHJ5
-cQhjc2lwCl91bnBpY2tsZV90eXBlCnEJWAwAAABQeVF0NC5RdENvcmVxClgKAAAAUUJ5dGVBcnJh
-eXELQy4B2dDLAAEAAAAAAJ0AAAA6AAAFRwAAAwcAAACdAAAAUAAABUcAAAMHAAAAAAAAcQyFcQ2H
-cQ5ScQ9YCwAAAHlfcmFuZ2VfbWF4cRBHAAAAAAAAAABYDAAAAHRyYWNlX3NoYWRvd3ERiVgLAAAA
-eF9yYW5nZV9tYXhxEksAWAsAAAB5X3JhbmdlX21pbnETRwAAAAAAAAAAWA4AAABjYXJ0ZXNpYW5f
-YXhpc3EUSwBYCwAAAHhfcmFuZ2VfbWlucRVHAAAAAAAAAABYHAAAAGltYWdlX3BsYW5lX3JlbF9h
-YnNfcG9zaXRpb25xFksAWAsAAABrZWVwX3Jlc3VsdHEXSwBYEAAAAGlzX2F1dG9tYXRpY19ydW5x
-GIhYBQAAAHRpdGxlcRlYBQAAACBZLCBYcRpYGAAAAGltYWdlX3BsYW5lX25ld19wb3NpdGlvbnEb
-R0AkAAAAAAAAdS4=
+		<properties format="pickle" node_id="1">gAN9cQAoWBMAAAB3ZWlnaHRfY29sdW1uX2luZGV4cQFLFlgYAAAAaW1hZ2VfcGxhbmVfbmV3X3Bv
+c2l0aW9ucQJHQCQAAAAAAABYEwAAAHNhdmVkV2lkZ2V0R2VvbWV0cnlxA2NzaXAKX3VucGlja2xl
+X3R5cGUKcQRYDAAAAFB5UXQ0LlF0Q29yZXEFWAoAAABRQnl0ZUFycmF5cQZDLgHZ0MsAAQAAAAAB
+cgAAARYAAAZmAAAEGAAAAXwAAAE8AAAGXAAABA4AAAAAAABxB4VxCIdxCVJxClgOAAAAY2FydGVz
+aWFuX2F4aXNxC0sAWA4AAABudW1iZXJfb2ZfYmluc3EMS2RYBAAAAHJheXNxDUsAWBwAAABpbWFn
+ZV9wbGFuZV9yZWxfYWJzX3Bvc2l0aW9ucQ5LAFgLAAAAeV9yYW5nZV9taW5xD0cAAAAAAAAAAFgO
+AAAAeV9jb2x1bW5faW5kZXhxEEsAWAwAAAB0cmFjZV9zaGFkb3dxEYlYBQAAAHRpdGxlcRJYBQAA
+ACBZLCBYcRNYCwAAAHlfcmFuZ2VfbWF4cRRHAAAAAAAAAABYCwAAAGtlZXBfcmVzdWx0cRVLAFgL
+AAAAaW1hZ2VfcGxhbmVxFksAWAcAAAB4X3JhbmdlcRdLAFgQAAAAaXNfYXV0b21hdGljX3J1bnEY
+iFgLAAAAeF9yYW5nZV9tYXhxGUsAWA4AAAB4X2NvbHVtbl9pbmRleHEaSwFYBwAAAHlfcmFuZ2Vx
+G0cAAAAAAAAAAFgLAAAAeF9yYW5nZV9taW5xHEcAAAAAAAAAAHUu
 </properties>
-		<properties format="pickle" node_id="2">gAN9cQAoWA4AAABudW1iZXJfb2ZfcmF5c3EBTYgTWBMAAABzYXZlZFdpZGdldEdlb21ldHJ5cQJj
-c2lwCl91bnBpY2tsZV90eXBlCnEDWAwAAABQeVF0NC5RdENvcmVxBFgKAAAAUUJ5dGVBcnJheXEF
-Qy4B2dDLAAEAAAAAAA4AAAAXAAAFkAAAAzUAAAAOAAAALQAABZAAAAM1AAAAAAAAcQaFcQeHcQhS
-cQlYEAAAAGlzX2F1dG9tYXRpY19ydW5xCohYDAAAAHRyYWNlX3NoYWRvd3ELiVgHAAAAc2lnbWFf
-enEMRz9Q4CIUJv5yWAcAAABzaWdtYV94cQ1HP3dY4hllK9RYEAAAAHVuZHVsYXRvcl9sZW5ndGhx
-Dkc/+mZmZmZmZlgJAAAAdmlld190eXBlcQ9LAFgGAAAAZW5lcmd5cRBHQL6ZgAAAAABYEgAAAHNp
-Z21hX2RpdmVyZ2VuY2VfenERRz7PtXz5+68NWAQAAABzZWVkcRJKh2JnAFgSAAAAc2lnbWFfZGl2
-ZXJnZW5jZV94cRNHPxHuPw1cCRVYBwAAAGRlbHRhX2VxFEc/8AAAAAAAAHUu
+		<properties format="pickle" node_id="2">gAN9cQAoWBMAAABzYXZlZFdpZGdldEdlb21ldHJ5cQFjc2lwCl91bnBpY2tsZV90eXBlCnECWAwA
+AABQeVF0NC5RdENvcmVxA1gKAAAAUUJ5dGVBcnJheXEEQy4B2dDLAAEAAAAAAFUAAABfAAAF6wAA
+A5cAAABfAAAAhQAABeEAAAONAAAAAAAAcQWFcQaHcQdScQhYBAAAAHNlZWRxCUqHYmcAWAcAAABk
+ZWx0YV9lcQpHP/AAAAAAAABYEAAAAHVuZHVsYXRvcl9sZW5ndGhxC0c/+mZmZmZmZlgHAAAAc2ln
+bWFfeHEMRz93WOIZZSvUWBIAAABzaWdtYV9kaXZlcmdlbmNlX3pxDUc+z7V8+fuvDVgMAAAAdHJh
+Y2Vfc2hhZG93cQ6JWAYAAABlbmVyZ3lxD0dAvpoAAAAAAFgOAAAAbnVtYmVyX29mX3JheXNxEE2I
+E1gSAAAAc2lnbWFfZGl2ZXJnZW5jZV94cRFHPxHuPw1cCRVYBwAAAHNpZ21hX3pxEkc/UOAiFCb+
+clgQAAAAaXNfYXV0b21hdGljX3J1bnETiFgJAAAAdmlld190eXBlcRRLAHUu
 </properties>
-		<properties format="pickle" node_id="3">gAN9cQAoWAsAAABpbWFnZV9wbGFuZXEBSwBYBwAAAHlfcmFuZ2VxAkcAAAAAAAAAAFgHAAAAeF9y
-YW5nZXEDSwBYDgAAAHlfY29sdW1uX2luZGV4cQRLBVgEAAAAcmF5c3EFSwBYDgAAAHhfY29sdW1u
-X2luZGV4cQZLA1gOAAAAbnVtYmVyX29mX2JpbnNxB0tkWBMAAABzYXZlZFdpZGdldEdlb21ldHJ5
-cQhjc2lwCl91bnBpY2tsZV90eXBlCnEJWAwAAABQeVF0NC5RdENvcmVxClgKAAAAUUJ5dGVBcnJh
-eXELQy4B2dDLAAEAAAAAAJ0AAAA6AAAFRwAAAwcAAACdAAAAUAAABUcAAAMHAAAAAAAAcQyFcQ2H
-cQ5ScQ9YCwAAAHlfcmFuZ2VfbWF4cRBHAAAAAAAAAABYDAAAAHRyYWNlX3NoYWRvd3ERiVgLAAAA
-eF9yYW5nZV9tYXhxEksAWAsAAAB5X3JhbmdlX21pbnETRwAAAAAAAAAAWA4AAABjYXJ0ZXNpYW5f
-YXhpc3EUSwBYCwAAAHhfcmFuZ2VfbWlucRVHAAAAAAAAAABYHAAAAGltYWdlX3BsYW5lX3JlbF9h
-YnNfcG9zaXRpb25xFksAWAsAAABrZWVwX3Jlc3VsdHEXSwBYEAAAAGlzX2F1dG9tYXRpY19ydW5x
-GIhYBQAAAHRpdGxlcRlYBwAAACBYJywgWidxGlgYAAAAaW1hZ2VfcGxhbmVfbmV3X3Bvc2l0aW9u
-cRtHQCQAAAAAAAB1Lg==
+		<properties format="pickle" node_id="3">gAN9cQAoWBMAAAB3ZWlnaHRfY29sdW1uX2luZGV4cQFLFlgYAAAAaW1hZ2VfcGxhbmVfbmV3X3Bv
+c2l0aW9ucQJHQCQAAAAAAABYEwAAAHNhdmVkV2lkZ2V0R2VvbWV0cnlxA2NzaXAKX3VucGlja2xl
+X3R5cGUKcQRYDAAAAFB5UXQ0LlF0Q29yZXEFWAoAAABRQnl0ZUFycmF5cQZDLgHZ0MsAAQAAAAAA
+iQAAACYAAAaDAAAD8AAAAJMAAABMAAAGewAAA90AAAAAAABxB4VxCIdxCVJxClgOAAAAY2FydGVz
+aWFuX2F4aXNxC0sAWA4AAABudW1iZXJfb2ZfYmluc3EMS2RYBAAAAHJheXNxDUsAWBwAAABpbWFn
+ZV9wbGFuZV9yZWxfYWJzX3Bvc2l0aW9ucQ5LAFgLAAAAeV9yYW5nZV9taW5xD0cAAAAAAAAAAFgO
+AAAAeV9jb2x1bW5faW5kZXhxEEsFWAwAAAB0cmFjZV9zaGFkb3dxEYlYBQAAAHRpdGxlcRJYBwAA
+ACBYJywgWidxE1gLAAAAeV9yYW5nZV9tYXhxFEcAAAAAAAAAAFgLAAAAa2VlcF9yZXN1bHRxFUsA
+WAsAAABpbWFnZV9wbGFuZXEWSwBYBwAAAHhfcmFuZ2VxF0sAWBAAAABpc19hdXRvbWF0aWNfcnVu
+cRiIWAsAAAB4X3JhbmdlX21heHEZSwBYDgAAAHhfY29sdW1uX2luZGV4cRpLA1gHAAAAeV9yYW5n
+ZXEbRwAAAAAAAAAAWAsAAAB4X3JhbmdlX21pbnEcRwAAAAAAAAAAdS4=
+</properties>
+		<properties format="pickle" node_id="4">gAN9cQBYEwAAAHNhdmVkV2lkZ2V0R2VvbWV0cnlxAWNzaXAKX3VucGlja2xlX3R5cGUKcQJYDAAA
+AFB5UXQ0LlF0Q29yZXEDWAoAAABRQnl0ZUFycmF5cQRDLgHZ0MsAAQAAAAACNgAAACEAAAX/AAAC
+2gAAAkAAAABHAAAF9QAAAtAAAAAAAABxBYVxBodxB1JxCHMu
 </properties>
 	</node_properties>
 </scheme>
