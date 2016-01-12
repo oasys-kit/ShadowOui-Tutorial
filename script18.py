@@ -28,6 +28,7 @@ import Shadow
 import copy
 
 do_intermediate_plots = 0
+horizontal_divergence_in_mrad = 5.0
 
 #
 # initialize shadow3 source (oe0) and beam
@@ -44,8 +45,8 @@ oe0.FDISTR = 4
 oe0.FSOURCE_DEPTH = 4
 oe0.F_COLOR = 3
 oe0.F_PHOT = 0
-oe0.HDIV1 = 0.0025
-oe0.HDIV2 = 0.0025
+oe0.HDIV1 = 0.5*1e-3*horizontal_divergence_in_mrad
+oe0.HDIV2 = 0.5*1e-3*horizontal_divergence_in_mrad
 oe0.ISTAR1 = 567656675
 oe0.NCOL = 0
 oe0.NPOINT = 25000
@@ -105,7 +106,7 @@ write  = 0         # 0=No     1=Yes (write shadow binary files)
 #
 # scanning magnification M: 
 #
-npts = 11
+npts = 51
 scan = numpy.linspace(0.1,1.0,npts) # from, to, npoints   
 
 #
