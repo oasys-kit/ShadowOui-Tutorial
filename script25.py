@@ -25,9 +25,10 @@ def goFromTo(source,image,distance=1.0,lensF=None,wavelength=1e-10):
 
 def main():
 
-    wavelength = 12398.419/11000 # 11 keV
+    wavelength = 12398.419 / 11000.0 * 1e-10 # 11 keV in m
     detector_size = 200e-6
     distance = 5.50
+    use_shadow_file = 1
 
 
     detpoints =  500
@@ -35,22 +36,24 @@ def main():
     shadowunits2m = 1e-2
 
 
-    screen0101 = Shadow.Beam()
-    screen0101.load("screen.0101")
-    position1x = screen0101.getshcol(3) * shadowunits2m
-
-
-    flag=screen0101.getshcol(10)
-    igood = numpy.where(flag >= 0)
-    igood = numpy.array(igood)
-    igood.shape = -1
-    print (flag.size)
-    print ('igood: ',igood.size)
-    print ('--------------')
-
-    position1x = position1x[igood]
-    position1x.shape = -1
-    sourcepoints = igood.size
+    if use_shadow_file:
+        #screen0101 = Shadow.Beam()
+        #screen0101.load("screen.0101")
+        screen0101 = in_object._beam
+        position1x = screen0101.getshcol(3) * shadowunits2m
+        flag=screen0101.getshcol(10)
+        igood = numpy.where(flag >= 0)
+        igood = numpy.array(igood)
+        igood.shape = -1
+        sourcepoints = igood.size
+        print (flag.size)
+        print ('igood: ',igood.size)
+        print ('--------------')
+        position1x = position1x[igood]
+        position1x.shape = -1
+    else:
+        position1x = numpy.linspace(-50e-6,50e-6,201)
+        sourcepoints = position1x.size
 
     position2x = numpy.linspace(-detector_size/2,detector_size/2,detpoints)
     
