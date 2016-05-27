@@ -11,7 +11,7 @@ ShadowOui workspace files
 ex*.ows
 Python script files
 -------------------
-SCRIPTS/*.py
+SCRIPTS/\*.py
 (in principle not needed, as they are integrated in the workspaces, but are kept separated for easier access):
 script*.py
 More Workspaces
