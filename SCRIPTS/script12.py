@@ -3,7 +3,7 @@ import Shadow
 
 #beam = Shadow.Beam()
 #beam.load("begin.dat")
-beam = in_object._beam
+beam = in_object_1._beam
 
 h23 = beam.histo1(6,ref=23)
 h24 = beam.histo1(6,ref=24)

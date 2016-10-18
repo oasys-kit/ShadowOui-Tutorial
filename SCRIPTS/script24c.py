@@ -7,7 +7,7 @@ ymin = -100.0
 ymax = 100.0
 ypoints = 101
 
-beam = in_object._beam
+beam = in_object_1._beam
 
 tkt = Shadow.ShadowTools.ray_prop(beam,nolost=1,ymin=ymin,ymax=ymax,ypoints=ypoints,xbins=61,zbins=61)
 

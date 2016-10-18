@@ -5,12 +5,8 @@
 import xraylib 
 import numpy
 
-import scipy.constants.codata
-codata = scipy.constants.codata.physical_constants
-codata_c, tmp1, tmp2 = codata["speed of light in vacuum"]
-codata_h, tmp1, tmp2 = codata["Planck constant"]
-codata_ec, tmp1, tmp2 = codata["elementary charge"]
-tocm = codata_h*codata_c/codata_ec*1e2
+import scipy.constants as codata
+tocm = codata.h*codata.c/codata.e*1e2
 
 #
 # define miller indices, distances and photon energy in eV

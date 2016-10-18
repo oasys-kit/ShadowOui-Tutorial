@@ -39,7 +39,7 @@ def main():
     if use_shadow_file:
         #screen0101 = Shadow.Beam()
         #screen0101.load("screen.0101")
-        screen0101 = in_object._beam
+        screen0101 = in_object_1._beam
         position1x = screen0101.getshcol(3) * shadowunits2m
         flag=screen0101.getshcol(10)
         igood = numpy.where(flag >= 0)

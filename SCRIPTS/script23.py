@@ -1,6 +1,6 @@
 import Shadow
 
-out_object = in_object.duplicate()
+out_object = in_object_1.duplicate()
 
 # pickup the beam at the source
 beam = out_object._beam
