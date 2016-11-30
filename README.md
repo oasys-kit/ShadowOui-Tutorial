@@ -3,6 +3,9 @@ ShadowOui-Tutorial
 ==================
 This directory contains the files and documentation for the Tutorial on
 ShadowOui
+
+WARNING: It is recommended to download the FULL directory (in a zip for example). Downloading the individual *.ows files may not work (if doing that, click the "RAW" button in github before downloading).
+
 Documents
 ---------
 tutorial_shadowoui.pdf
