@@ -33,9 +33,10 @@
 		<link enabled="true" id="12" sink_channel="PreProcessor Data #1" sink_node_id="12" source_channel="PreProcessor_Data" source_node_id="0" />
 	</links>
 	<annotations>
-		<text font-family="Helvetica" font-size="16" id="0" rect="(56.0, 7.0, 337.0, 60.0)">c=2 Horizontal Plane. No slope errors</text>
-		<text font-family="Helvetica" font-size="16" id="1" rect="(65.0, 295.0, 341.0, 60.0)">c=2 Horizontal Plane. With slope errors</text>
-		<text font-family="Helvetica" font-size="16" id="2" rect="(37.0, 580.0, 548.0, 156.0)">Note that the results are sligtly different than in the slides. May be the slope errors are not the same... But the discussed effects are clear.  </text>
+		<text font-family="Helvetica" font-size="16" id="0" rect="(56.0, 7.0, 337.0, 60.0)">c=2 Vertical Plane. No slope errors</text>
+		<text font-family="Helvetica" font-size="16" id="1" rect="(65.0, 295.0, 341.0, 60.0)">c=2 Verical Plane. With slope errors</text>
+		<text font-family="Helvetica" font-size="16" id="2" rect="(37.0, 575.0, 711.0, 161.0)">Note that the results are sligtly different than in the slides if you recreate the surface error running the simulator. 
+The original slope errors are not exactly the same...  </text>
 	</annotations>
 	<thumbnail />
 	<node_properties>
