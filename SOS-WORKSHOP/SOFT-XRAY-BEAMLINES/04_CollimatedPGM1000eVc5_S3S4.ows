@@ -21,7 +21,7 @@
 		<node id="17" name="Generic Mirror" position="(394.0, 199.0)" project_name="OASYS1-shadow4" qualified_name="orangecontrib.shadow4.widgets.optics.ow_mirror.OWMirror" title="Generic Mirror" version="" />
 		<node id="18" name="Generic Grating" position="(507.0, 206.0)" project_name="OASYS1-shadow4" qualified_name="orangecontrib.shadow4.widgets.optics.ow_grating.OWGrating" title="Generic Grating" version="" />
 		<node id="19" name="Info" position="(735.0, 123.0)" project_name="OASYS1-shadow4" qualified_name="orangecontrib.shadow4.widgets.tools.ow_info.OWInfo" title="Info" version="" />
-		<node id="20" name="Plot XY" position="(733.0, 277.0)" project_name="OASYS1-shadow4" qualified_name="orangecontrib.shadow4.widgets.tools.ow_plot_xy.PlotXY" title="Plot XY" version="" />
+		<node id="20" name="Plot XY" position="(733.0, 276.0)" project_name="OASYS1-shadow4" qualified_name="orangecontrib.shadow4.widgets.tools.ow_plot_xy.PlotXY" title="Plot XY" version="" />
 		<node id="21" name="Generic Mirror" position="(623.0, 206.0)" project_name="OASYS1-shadow4" qualified_name="orangecontrib.shadow4.widgets.optics.ow_mirror.OWMirror" title="Generic Mirror" version="" />
 		<node id="22" name="shadow4-&gt;3 beam converter" position="(250.0, 374.0)" project_name="OASYS1-shadow4" qualified_name="orangecontrib.shadow4.widgets.compatibility.ow_shadow4_beam_to_shadow3_beam.OW_beam_converter_4_to_3" title="shadow4-&gt;3 beam converter" version="" />
 		<node id="23" name="Geometrical Source" position="(130.0, 819.0)" project_name="OASYS1-shadow4" qualified_name="orangecontrib.shadow4.widgets.sources.ow_geometrical.OWGeometrical" title="Geometrical Source" version="" />
@@ -1178,7 +1178,7 @@ AFgQAAAAaXNfYXV0b21hdGljX3J1bnEJiFgUAAAAaXNfY29udmVyc2lvbl9hY3RpdmVxCksBWAsA
 AABrZWVwX3Jlc3VsdHELSwBYDgAAAG51bWJlcl9vZl9iaW5zcQxLZFgQAAAAbnVtYmVyX29mX2Jp
 bnNfdnENS2RYBAAAAHJheXNxDksBWBMAAABzYXZlZFdpZGdldEdlb21ldHJ5cQ9jc2lwCl91bnBp
 Y2tsZV90eXBlCnEQWAwAAABQeVF0NS5RdENvcmVxEVgKAAAAUUJ5dGVBcnJheXESQ0IB2dDLAAMA
-AAAAAGAAAAAbAAAFhwAAAvsAAABgAAAAQAAABYcAAAL7AAAAAAAAAAAHgAAAAGAAAABAAAAFhwAA
+AAAAAGAAAABAAAAFhwAAAvsAAABgAAAAQAAABYcAAAL7AAAAAAAAAAAHgAAAAGAAAABAAAAFhwAA
 AvtxE4VxFIdxFVJxFlgFAAAAdGl0bGVxF1gFAAAAIFosIFhxGFgTAAAAd2VpZ2h0X2NvbHVtbl9p
 bmRleHEZSxdYDgAAAHhfY29sdW1uX2luZGV4cRpLAlgHAAAAeF9yYW5nZXEbSwFYCwAAAHhfcmFu
 Z2VfbWF4cRxHQHkAAAAAAABYCwAAAHhfcmFuZ2VfbWlucR1HwHkAAAAAAABYDgAAAHlfY29sdW1u
@@ -1367,12 +1367,12 @@ X3Bvc2l0aW9ucQpHP/HJhfBvaURYHAAAAGltYWdlX3BsYW5lX3JlbF9hYnNfcG9zaXRpb25xC0sB
 WBAAAABpc19hdXRvbWF0aWNfcnVucQyIWAsAAABrZWVwX3Jlc3VsdHENSwBYEAAAAG51bWJlcl9v
 Zl9iaW5zX2hxDktkWBAAAABudW1iZXJfb2ZfYmluc192cQ9LZFgEAAAAcmF5c3EQSwFYEwAAAHNh
 dmVkV2lkZ2V0R2VvbWV0cnlxEWNzaXAKX3VucGlja2xlX3R5cGUKcRJYDAAAAFB5UXQ1LlF0Q29y
-ZXETWAoAAABRQnl0ZUFycmF5cRRDQgHZ0MsAAwAAAAABNAAAAR8AAAZbAAAD/wAAATQAAAFEAAAG
+ZXETWAoAAABRQnl0ZUFycmF5cRRDQgHZ0MsAAwAAAAABNAAAAUQAAAZbAAAD/wAAATQAAAFEAAAG
 WwAAA/8AAAAAAAAAAAeAAAABNAAAAUQAAAZbAAAD/3EVhXEWh3EXUnEYWAUAAAB0aXRsZXEZWAMA
 AABaLFhxGlgTAAAAd2VpZ2h0X2NvbHVtbl9pbmRleHEbSxdYDgAAAHhfY29sdW1uX2luZGV4cRxL
 AlgHAAAAeF9yYW5nZXEdSwFYCwAAAHhfcmFuZ2VfbWF4cR5HQHkAAAAAAABYCwAAAHhfcmFuZ2Vf
 bWlucR9HwHkAAAAAAABYDgAAAHlfY29sdW1uX2luZGV4cSBLAFgHAAAAeV9yYW5nZXEhSwFYCwAA
-AHlfcmFuZ2VfbWF4cSJHQCQAAAAAAABYCwAAAHlfcmFuZ2VfbWlucSNHwCQAAAAAAAB1Lg==
+AHlfcmFuZ2VfbWF4cSJHQBwAAAAAAABYCwAAAHlfcmFuZ2VfbWlucSNHwBwAAAAAAAB1Lg==
 </properties>
 		<properties format="pickle" node_id="21">gAN9cQAoWBcAAABhbmdsZV9vZl9tYWpheF9hbmRfcG9sZXEBRz/wAAAAAAAAWBEAAABhbmdsZXNf
 cmVzcGVjdF90b3ECSwBYDwAAAGNvYXRpbmdfZGVuc2l0eXEDR0ACo9cKPXCkWBAAAABjb2F0aW5n
